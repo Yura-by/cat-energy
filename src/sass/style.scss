@@ -1,0 +1,9 @@
+@import "normalize.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "scaffolding.scss";
+
+body {
+  background-color: blue;
+  font-size: 20px;
+}
