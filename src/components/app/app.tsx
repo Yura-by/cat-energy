@@ -1,9 +1,12 @@
 import * as React from 'react';
-import PageMain from '../page-main/page-main';
+import PageContent from '../page-content/page-content';
+import {BrowserRouter} from 'react-router-dom';
 
 const App = () => {
   return (
-    <PageMain />
+    <BrowserRouter>
+      <PageContent />
+    </BrowserRouter>
   );
 };
 

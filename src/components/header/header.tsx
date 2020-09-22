@@ -1,12 +1,15 @@
 import * as React from 'react';
+import {Link} from 'react-router-dom';
 
-enum Menu {
-  MAIN = `Главная`,
-  CATALOG = `Каталог продукции`,
-  PROGRAM =  `Подбор программы`,
+interface Props {
+  menuItems: string[];
+  linkHrefs: string[];
+  activeItem: string;
+  onMenuItemChange: (menu: string) => void;
 }
 
-const Header = () => {
+const Header: React.FunctionComponent<Props> = (props: Props) => {
+  const {menuItems, linkHrefs, activeItem, onMenuItemChange} = props;
   return (
     <header className="page-header">
 
@@ -17,10 +20,20 @@ const Header = () => {
 
       <nav className="page-header__nav main-nav">
         <ul className="main-nav__list site-list">
-          {Object.values(Menu).map((menuItem) => <li className="site-list_item" key={menuItem}><a href="" className="site-list_link">{menuItem}</a></li>)}
+          {menuItems.map((menuItem, index) => {
+            const activeClass = menuItem === activeItem ? `site-list__item--active` : ``;
+            return (
+              <li className={`site-list__item ${activeClass}`} key={menuItem}>
+                <Link to={linkHrefs[index]} className="site-list_link"
+                  onClick={() => {
+                    onMenuItemChange(menuItem);
+                  }}>{menuItem}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </nav>
-
     </header>
   );
 };
