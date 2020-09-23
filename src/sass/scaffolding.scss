@@ -1,3 +1,37 @@
+@font-face {
+  font-family: 'Oswald Bold';
+  src: url('../fonts/oswald-bold-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oswald Regular';
+  src: url('../fonts/oswald-regular-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oswald Demi Bold';
+  src: url('../fonts/oswald-demibold-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oswald Heavy';
+  src: url('../fonts/oswald-heavy-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.page-header__logo-title {
+  font-family: "Oswald Heavy";
+  font-weight: 700;
+}
+
+
 a {
   text-decoration: none;
 }
