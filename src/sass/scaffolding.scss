@@ -26,12 +26,6 @@
   font-style: normal;
 }
 
-.page-header__logo-title {
-  font-family: "Oswald Heavy";
-  font-weight: 700;
-}
-
-
 a {
   text-decoration: none;
 }
@@ -44,6 +38,13 @@ img {
 body {
   min-width: 320px;
   margin: 0;
+  color: black;
+  background-color: #fff;
+  font-family: "Oswald Regular", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: normal;
 }
 
 .visually-hidden:not(:focus):not(:active),

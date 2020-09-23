@@ -1,0 +1,21 @@
+@mixin resetListStyle {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin resetLink {
+  font: inherit;
+}
+
+@mixin resetParagraph {
+  margin: 0;
+}
+
+@mixin resetButton {
+  font: inherit;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  box-sizing: border-box;
+}
