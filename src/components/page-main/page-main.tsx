@@ -3,16 +3,17 @@ import * as React from 'react';
 const PageMain = () => {
   return (
     <main className="page-main">
-      <h1 className="page-main__title">
-        Функциональное питание для котов
-      </h1>
+      <div className="page-main__top-wrapper">
+        <h1 className="page-main__title">
+          Функциональное питание для котов
+        </h1>
 
-      <section className="page-main__introduction introduction">
-        <h2 className="visually-hidden">Не тяни, сразу выбирай!</h2>
-        <p className="introduction__tip">Занялся собой? Займись котом!</p>
-        <img src="" alt="Our goods!" className="introduction__image"/>
-        <a className="introduction__btn" href="">Подобрать программу</a>
-      </section>
+        <section className="page-main__introduction introduction">
+          <h2 className="visually-hidden">Не тяни, сразу выбирай!</h2>
+          <p className="introduction__tip">Занялся собой? Займись котом!</p>
+          <a className="introduction__btn" href="">Подобрать программу</a>
+        </section>
+      </div>
 
       <section className="page-main__offers main-offers">
         <h2 className="visually-hidden">Список каталогов</h2>

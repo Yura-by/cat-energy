@@ -1,0 +1,57 @@
+.introduction__tip {
+  @include resetP;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  margin-bottom: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.introduction__btn {
+  font-size: 14px;
+  line-height: 18px;
+  display: block;
+  background-color: $main-color;
+  padding-top: 13px;
+  padding-bottom: 9px;
+  text-align: center;
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.introduction {
+  background-image: url("../img/index-can-mobile.png");
+  background-position: center bottom 44px;
+  background-repeat: no-repeat;
+}
+
+@media(min-width: $tablet-width) {
+  .introduction__tip {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 533px;
+    margin-bottom: 45px;
+  }
+
+  .introduction__btn {
+    width: 32%;
+    margin-left: 119px;
+    color: white;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 18px;
+    padding-bottom: 14px;
+  }
+
+  .introduction {
+    background-image: none;
+    padding-bottom: 528px;
+    background-image: url("../img/index-can-tablet.png");
+    background-position: center top 37px;
+  }
+}

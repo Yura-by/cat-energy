@@ -19,3 +19,11 @@
   background-color: transparent;
   box-sizing: border-box;
 }
+
+@mixin resetH {
+  margin: 0;
+}
+
+@mixin resetP {
+  margin: 0;
+}

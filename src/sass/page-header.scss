@@ -106,9 +106,8 @@
     display: none;
   }
 
-  .page-header__logo-image {
-    width: 45px;
-    height: 52px;
+  .page-header__wrapper {
+    padding-top: 55px;
   }
 
   .page-header__wrapper {
@@ -136,4 +135,39 @@
   .page-header__nav {
     width: 62%;
   }
+}
+
+@media(min-width: $desktop-width) {
+  .page-header__logo-image-desktop-title {
+    display: none;
+  }
+
+  .page-header__wrapper {
+    width: 94%;
+    padding-top: 54px;
+  }
+
+  .page-header__logo-image {
+    width: 45px;
+    height: 52px;
+  }
+
+  .page-header__inner-wrapper {
+    width: 202px;
+    position: relative;
+  }
+
+  .page-header__logo-title {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 10px;
+    font-size: 25px;
+  }
+
+  .page-header__nav {
+    width: 39.3%;
+  }
+
+
 }
