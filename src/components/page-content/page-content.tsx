@@ -21,6 +21,7 @@ enum AppRoute {
 
 interface State {
   activeMenu: Menu;
+  isMenuOpen: boolean;
 }
 
 export default class PageContent extends React.PureComponent<{}, State> {
@@ -29,15 +30,25 @@ export default class PageContent extends React.PureComponent<{}, State> {
 
     this.state = {
       activeMenu: Menu.MAIN,
+      isMenuOpen: false,
     };
 
     this._menuChangeHandler = this._menuChangeHandler.bind(this);
+    this._menuButtonChangeHandler = this._menuButtonChangeHandler.bind(this);
   }
 
   private _menuChangeHandler(menuItem: Menu) {
     this.setState({
       activeMenu: menuItem,
     });
+  }
+
+  private _menuButtonChangeHandler() {
+    this.setState((prevState) => {
+      return {
+        isMenuOpen: !prevState.isMenuOpen,
+      }
+    })
   }
 
   render() {
@@ -48,6 +59,8 @@ export default class PageContent extends React.PureComponent<{}, State> {
           linkHrefs={Object.values(AppRoute)}
           activeItem={this.state.activeMenu}
           onMenuItemChange={this._menuChangeHandler}
+          isMenuOpen={this.state.isMenuOpen}
+          onMenuButtonClick={this._menuButtonChangeHandler}
         />
 
         <Switch>
