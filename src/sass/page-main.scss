@@ -39,3 +39,19 @@
     background-image: none;
   }
 }
+
+@media(min-width: $desktop-width) {
+
+  .page-main__top-wrapper {
+    padding-top: 100px;
+    color: #000;
+    background-image: url("../img/index-can-desktop.png");
+    background-repeat: no-repeat;
+    background-position: left 37.8vw top 14px;
+  }
+
+  .page-main__title {
+    margin-left: 9.2vw;
+    width: 460px;
+  }
+}

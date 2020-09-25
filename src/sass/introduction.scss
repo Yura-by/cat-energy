@@ -55,3 +55,21 @@
     background-position: center top 37px;
   }
 }
+
+@media(min-width: $desktop-width) {
+  .introduction {
+    margin-left: 9.2vw;
+    width: 460px;
+    background-image: none;
+  }
+
+  .introduction__btn {
+    width: 53.6%;
+    margin: 0;
+  }
+
+  .introduction__tip {
+    margin-bottom: 53px;
+  }
+
+}
