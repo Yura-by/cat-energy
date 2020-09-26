@@ -19,6 +19,10 @@
   width: 87.5%;
   margin-left: auto;
   margin-right: auto;
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .introduction {
@@ -50,7 +54,7 @@
 
   .introduction {
     background-image: none;
-    padding-bottom: 528px;
+    padding-bottom: 508px;
     background-image: url("../img/index-can-tablet.png");
     background-position: center top 37px;
   }
@@ -72,4 +76,7 @@
     margin-bottom: 53px;
   }
 
+  .introduction {
+    padding-bottom: 166px;
+  }
 }

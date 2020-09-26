@@ -1,0 +1,189 @@
+.offer-link__title {
+  @include resetH;
+  font-size: 24px;
+  line-height: 37px;
+  text-align: center;
+  padding-left: 10px;
+  margin-bottom: 24px;
+}
+
+.offer-link__descripiton {
+  @include resetParagraph;
+  font-family: "Arial", "sans-serif";
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: none;
+  font-weight: normal;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 21px;
+}
+
+.offer-link__referense {
+  font-size: 16px;
+  line-height: 16px;
+  display: block;
+  position: relative;
+  padding-top: 21px;
+  padding-bottom: 21px;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.offer-link__referense::before {
+  content: "";
+  width: 21px;
+  height: 4px;
+  background-color: #3e4242;
+  position: absolute;
+  left: 95px;
+  top: 26px;
+}
+
+.offer-link__referense::after {
+  content: "";
+  width: 0;
+  border: 6px solid #3e4242;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-width: 0;
+  position: absolute;
+  left: 113px;
+  top: 22px;
+}
+
+.offer-link {
+  background-color: #f2f2f2;
+  width: 87.5%;
+  margin: 0 auto;
+  margin-bottom: 21px;
+}
+
+.offer-link--slim {
+  background-image: url("../img/cat-icon-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 10% 22px;;
+}
+
+.offer-link__wrapper {
+  width: 85.7%;
+  margin: 0 auto;
+  padding-top: 35px;
+}
+
+.offer-link--pro .offer-link__title {
+  padding-left: 40px;
+}
+
+.offer-link--pro {
+  background-image: url("../img/pantera-icon-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 6% 22px;;
+}
+
+@media(min-width: $tablet-width) {
+  .offer-link {
+    width: 92%;
+    padding-bottom: 38px;
+    margin-bottom: 30px;
+  }
+
+  .offer-link__title {
+    font-size: 36px;
+    line-height: 37px;
+    text-align: left;
+    padding-left: 0;
+    margin-bottom: 19px;
+  }
+
+  .offer-link__descripiton {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .offer-link__wrapper {
+    width: 53%;
+    margin-left: 7.5%;
+    padding-top: 82px;
+  }
+
+  .offer-link__referense {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .offer-link__descripiton {
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 38px;
+  }
+
+  .offer-link__referense::after {
+    left: 148px;
+  }
+
+  .offer-link__referense::before {
+    left: 130px;
+  }
+
+  .offer-link--pro .offer-link__title {
+    padding-left: 0;
+  }
+
+  .offer-link__descripiton {
+    min-height: 96px;
+  }
+
+  .offer-link--slim {
+    background-image: url("../img/cat-icon-tablet.png");
+    background-repeat: no-repeat;
+    background-position: 88% 81px;
+  }
+
+  .offer-link--pro {
+    background-image: url("../img/pantera-icon-tablet.png");
+    background-repeat: no-repeat;
+    background-position: 94% 90px;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .offer-link {
+    width: 46.6%;
+    margin: 0;
+  }
+
+  .offer-link__wrapper {
+    width: 82%;
+    margin: 0 auto;
+  }
+
+  .offer-link__title {
+    padding-left: 19px;
+    text-align: center;
+    margin-bottom: 69px;
+  }
+
+  .offer-link__descripiton {
+    margin-bottom: 0;
+  }
+
+  .offer-link__descripiton {
+    min-height: 84px;
+  }
+
+  .offer-link--slim {
+    background-size: 100px 100px;
+    background-position: 11.5% 43px;
+  }
+
+  .offer-link--pro {
+    background-size: 134px 100px;
+    background-position: 8% 47px;
+  }
+
+  .offer-link--pro .offer-link__title {
+    padding-left: 59px;
+  }
+}

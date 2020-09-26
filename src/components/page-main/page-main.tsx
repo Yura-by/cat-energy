@@ -18,16 +18,20 @@ const PageMain = () => {
       <section className="page-main__offers main-offers">
         <h2 className="visually-hidden">Список каталогов</h2>
 
-        <article className="main-offers__link offer-link">
-          <h3 className="offer-link__title">Похудение</h3>
-          <p className="offer-link__title">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a href="" className="offer-link__link">Каталог Slim</a>
+        <article className="main-offers__link offer-link offer-link--slim">
+          <div className="offer-link__wrapper">
+            <h3 className="offer-link__title">Похудение</h3>
+            <p className="offer-link__descripiton">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a href="" className="offer-link__referense">Каталог Slim</a>
+          </div>
         </article>
 
-        <article className="main-offers__link offer-link">
-          <h3 className="offer-link__title">Набор массы</h3>
-          <p className="offer-link__title">Заработать авториртет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a href="" className="offer-link__link">Каталог Pro</a>
+        <article className="main-offers__link offer-link offer-link--pro">
+          <div className="offer-link__wrapper">
+            <h3 className="offer-link__title">Набор массы</h3>
+            <p className="offer-link__descripiton">Заработать авториртет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a href="" className="offer-link__referense">Каталог Pro</a>
+          </div>
         </article>
 
       </section>

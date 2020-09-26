@@ -23,6 +23,15 @@
   display: flex;
 }
 
+.page-header__logo:hover,
+.page-header__logo:active {
+  opacity: 0.8;
+}
+
+.page-header__logo:active {
+  opacity: 0.6;
+}
+
 .page-header__logo-title {
   @include resetParagraph;
   font-size: 22px;
@@ -96,6 +105,8 @@
 .page-header__logo-image-desktop {
   display: none;
 }
+
+
 
 @media(min-width: $tablet-width) {
   .page-header__nav--close {
