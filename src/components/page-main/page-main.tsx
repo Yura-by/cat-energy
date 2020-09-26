@@ -39,16 +39,16 @@ const PageMain = () => {
       <section className="page-main__description work-description">
         <h2 className="work-description__title">Как это работает</h2>
         <ul className="work-description__list">
-          <li className="work-description__item">
+          <li className="work-description__item work-description__item--leaf">
             Функциональное питание содержит только полезные питательные вещества.
           </li>
-          <li className="work-description__item">
+          <li className="work-description__item work-description__item--powder">
             Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
           </li>
-          <li className="work-description__item">
+          <li className="work-description__item work-description__item--table-ware">
             Замените один-два приема обычной еды на наше функциональное питание.
           </li>
-          <li className="work-description__item">
+          <li className="work-description__item work-description__item--clock">
             Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
           </li>
         </ul>

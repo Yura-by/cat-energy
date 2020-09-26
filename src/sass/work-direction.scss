@@ -1,0 +1,137 @@
+.work-description__title {
+  @include resetH;
+  font-size: 36px;
+  line-height: 60px;
+  text-transform: none;
+  width: 87.5%;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.work-description__list {
+  @include resetListStyle;
+  width: 87.5%;
+  margin: 0 auto;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: none;
+  font-weight: normal;
+}
+
+.work-description__item {
+  padding-left: 80px;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+  background-position: 0 0;
+  min-height: 60px;
+}
+
+.work-description__item--leaf {
+  background-image: url("../img/leaf-icon.png");
+}
+
+.work-description__item--powder {
+  background-image: url("../img/powder-icon.png");
+}
+
+.work-description__item--table-ware {
+  background-image: url("../img/table-ware-icon.png");
+}
+
+.work-description__item--clock {
+  background-image: url("../img/clock-icon.png");
+}
+
+@media(min-width: $tablet-width) {
+  .work-description__title {
+    font-size: 60px;
+    line-height: 60px;
+    width: 92%;
+    margin-bottom: 64px;
+  }
+
+  .work-description__list {
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 92%;
+    justify-content: space-between;
+    padding-right: 75px;
+    box-sizing: border-box;
+  }
+
+  .work-description__item {
+    padding-left: 0;
+    width: 250px;
+    min-height: 260px;
+    padding-top: 112px;
+    box-sizing: border-box;
+    margin-bottom: 57px;
+    background-size: 80px 80px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      font-family: "Oswald Regular", Arial, sans-serif;
+      font-size: 281px;
+      line-height: 281px;
+      top: 0;
+      z-index: -1;
+      right: 0;
+      color: #f2f2f2;
+    }
+  }
+
+  .work-description {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      bottom: 30px;
+      background-color: #e6e6e6;
+    }
+  }
+
+  .work-description__item--leaf::before {
+    content: "1";
+  }
+
+  .work-description__item--powder::before {
+    content: "2";
+  }
+
+  .work-description__item--table-ware::before {
+    content: "3";
+  }
+
+  .work-description__item--clock::before {
+    content: "4";
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .work-description__title {
+    width: 94%;
+  }
+
+  .work-description__list {
+    padding-right: 0;
+    width: 94%;
+  }
+
+  .work-description {
+    position: relative;
+
+    &::after {
+      display: none;
+    }
+  }
+}
