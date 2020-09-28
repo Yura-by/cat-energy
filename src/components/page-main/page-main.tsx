@@ -1,4 +1,5 @@
 import * as React from 'react';
+import InteractiveExample from '../interactive-example/interactive-example';
 
 const PageMain = () => {
   return (
@@ -55,29 +56,42 @@ const PageMain = () => {
       </section>
 
       <section className="page-main__example example">
-        <h2 className="example_title">Живой пример</h2>
-        <p className="example__description">
-          Борис сбросил 5кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-        <dl className="exapmle__list">
-          <dt className="example__value">
-            5 кг
-          </dt>
-          <dd className="example__desc">
-              Снижение веса
-          </dd>
-          <dt className="example__value">
-            60 дней
-          </dt>
-          <dd className="example__desc">
-              Затрачень времени
-          </dd>
-        </dl>
-        <p className="example__sum">
-          Затраты на питание: 15 000 руб.
-        </p>
-        <img src="" alt="Фото котика до и после!" className="example__image"/>
-        <input type="range" min="1" max="10" className="example__range"/>
+        <div className="exapmle__wrapper">
+          <div className="exapmle__inner-container">
+            <h2 className="example_title">Живой пример</h2>
+            <p className="example__description">
+              Борис сбросил 5кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+            </p>
+            <div className="exapmle__inner-wrapper">
+              <dl className="exapmle__list">
+                <div className="example__item">
+                  <dt className="example__value">
+                    5 кг
+                  </dt>
+                  <dd className="example__desc">
+                      Снижение веса
+                  </dd>
+                </div>
+                <div className="example__item">
+                  <dt className="example__value">
+                    60 дней
+                  </dt>
+                  <dd className="example__desc">
+                      Затрачено времени
+                  </dd>
+                </div>
+              </dl>
+              <p className="example__sum">
+                <span className="example__span">Затраты на питание:</span>
+                <span className="example__span"> 15 000 руб.</span>
+              </p>
+            </div>
+          </div>
+
+
+          <InteractiveExample />
+        </div>
+
       </section>
 
       <section className="page-main__partners to-partners">

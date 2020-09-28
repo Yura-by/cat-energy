@@ -44,6 +44,10 @@
   background-image: url("../img/clock-icon.png");
 }
 
+.work-description {
+  margin-bottom: 40px;
+}
+
 @media(min-width: $tablet-width) {
   .work-description__title {
     font-size: 60px;
@@ -115,6 +119,10 @@
   .work-description__item--clock::before {
     content: "4";
   }
+
+  .work-description {
+    margin-bottom: 0;
+  }
 }
 
 @media(min-width: $desktop-width) {
@@ -133,5 +141,10 @@
     &::after {
       display: none;
     }
+  }
+
+  .work-description__item {
+    margin-bottom: 0;
+    min-height: 249px;
   }
 }

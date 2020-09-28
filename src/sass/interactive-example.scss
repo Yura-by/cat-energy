@@ -1,0 +1,152 @@
+.interactive-example__scale {
+  @include resetParagraph;
+}
+
+.interactive-example__top-wrapper {
+  position: relative;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 255px;
+  margin-bottom: 37px;
+}
+
+.interactive-example__before {
+  background-image: url("../img/before-mobile.png");
+  background-repeat: no-repeat;
+  background-position: -20px 26px;
+  min-height: 255px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.interactive-example__after {
+  background-image: url("../img/after-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 25px 15px;
+  min-height: 255px;;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.interactive-exaple__bottom-wrapper {
+  width: 280px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.interactive-example__scale {
+  width: 180px;
+  height: 14px;
+  box-sizing: border-box;
+  border: 1px solid #cdcdcd;
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+}
+
+.interactive-exaple__pin {
+  position: absolute;
+  width: 34px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #68b738;
+  left: 50%;
+  margin-left: -17px;
+  top: 3px;
+  z-index: 10;
+}
+
+@media(min-width: $tablet-width) {
+  .interactive-example__before {
+    background-image: url("../img/before-desktop.png");
+    background-position: 14px 25px;
+    min-height: 530px;
+  }
+
+  .interactive-example__after {
+    background-image: url("../img/after-desktop.png");
+    min-height: 530px;
+    background-position: 107px 5px;
+
+  }
+
+  .interactive-example__top-wrapper {
+    width: 708px;
+    min-height: 530px;
+  }
+
+  .interactive-example__scale {
+    width: 428px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #dcdcdc;
+    border: none;
+    align-self: center;
+  }
+
+  .interactive-exaple__bottom-wrapper {
+    width: 572px;
+  }
+
+  .interactive-exaple__pin {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    box-shadow: 0 0 2px 2px #f0f0f0;
+    background-color: #ffffff;
+    top: -15px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background-color: #68b738;
+      border-radius: 50%;
+      margin: auto;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  .interactive-exaple__desc {
+    font-size: 20px;
+    line-height: 20px;
+    border-bottom: 1px dotted #dcdcdc;
+  }
+
+  .interactive-example__top-wrapper {
+    margin-bottom: 17px;
+  }
+
+  .interactive-example {
+    background-color: transparent;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .interactive-example {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .interactive-exaple__bottom-wrapper {
+    margin: 0;
+  }
+
+  .interactive-example__top-wrapper {
+    margin-bottom: 35px;
+  }
+}
+
