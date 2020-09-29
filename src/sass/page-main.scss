@@ -22,7 +22,14 @@
   background-position: top 0 center;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .page-main {
+    background-image: url("../img/index-background-mobile-2x.png");
+    background-size: 320px auto;
+  }
+}
+
+@media (min-width: $tablet-width) {
   .page-main__title {
     font-size: 60px;
     line-height: 60px;
@@ -45,7 +52,7 @@
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
 
   .page-main__top-wrapper {
     padding-top: 100px;
