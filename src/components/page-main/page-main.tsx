@@ -95,7 +95,7 @@ const PageMain = () => {
       </section>
 
       <section className="page-main__partners to-partners">
-        <h2 className="to-partners__tit">
+        <h2 className="to-partners__title">
           Приглашаем к сотрудничеству дилеров!
         </h2>
         <address className="to-partners__address">

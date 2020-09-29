@@ -15,7 +15,7 @@
   margin: 0 auto;
 
   justify-content: space-between;
-  padding-bottom: 17px;
+  padding-bottom: 14px;
 }
 
 .page-header__logo {
@@ -30,17 +30,6 @@
 
 .page-header__logo:active {
   opacity: 0.6;
-}
-
-.page-header__logo-title {
-  @include resetParagraph;
-  font-size: 22px;
-  margin-top: 12px;
-  margin-left: 55px;
-}
-
-.page-header__logo-cat {
-  font-family: "Oswald Heavy", "Arial", "sans-serif";
 }
 
 .page-header__button {
@@ -138,11 +127,6 @@
     display: block;
   }
 
-  .page-header__logo-image,
-  .page-header__logo-title {
-    display: none;
-  }
-
   .page-header__nav {
     width: 62%;
   }
@@ -166,14 +150,6 @@
   .page-header__inner-wrapper {
     width: 202px;
     position: relative;
-  }
-
-  .page-header__logo-title {
-    position: absolute;
-    display: block;
-    right: 0;
-    top: 10px;
-    font-size: 25px;
   }
 
   .page-header__nav {
