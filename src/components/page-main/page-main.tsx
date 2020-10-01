@@ -94,18 +94,20 @@ const PageMain = () => {
 
       </section>
 
-      <section className="page-main__partners to-partners">
-        <h2 className="to-partners__title">
-          Приглашаем к сотрудничеству дилеров!
-        </h2>
-        <address className="to-partners__address">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-        </address>
-      </section>
+      <div className="page-main__location__wrapper">
+        <section className="page-main__partners to-partners">
+          <h2 className="to-partners__title">
+            Приглашаем<br /> к сотрудничеству дилеров!
+          </h2>
+          <address className="to-partners__address">
+            ул. Большая<br /> Конюшенная, д. 19/8 <span>Санкт-Петербург</span>
+          </address>
+        </section>
 
-      <section className="page-main__map">
-        <h2 className="visually-hidden">Мы на карте!</h2>
-      </section>
+        <section className="page-main__map">
+          <h2 className="visually-hidden">Мы на карте!</h2>
+        </section>
+      </div>
     </main>
   );
 };

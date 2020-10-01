@@ -29,6 +29,23 @@
   }
 }
 
+.page-main__map {
+  min-height: 360px;
+  background-image: url("../img/map-pin.png"), url("../img/map-mobile.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 50% 45%, 59% 0;
+  background-size: 55px 53px, 835px auto;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/map-pin-2x.png"), url("../img/map-mobile-2x.jpg");
+  }
+}
+
+.page-main__partners {
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
+
 @media (min-width: $tablet-width) {
   .page-main__title {
     font-size: 60px;
@@ -50,7 +67,25 @@
   .page-main__offers  {
     margin-bottom: 53px;
   }
+
+  .page-main__partners {
+    padding-top: 64px;
+    padding-bottom: 58px;
+  }
+
+  .page-main__map {
+    min-height: 400px;
+    background-image: url("../img/map-pin.png"), url("../img/map-tablet.jpg");
+    background-position: 50% 49%, 50% 0;
+    background-size: 113px 106px, 1495px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/map-pin-2x.png"), url("../img/map-tablet-2x.jpg");
+    }
+  }
+
 }
+
 
 @media (min-width: $desktop-width) {
 
@@ -70,5 +105,25 @@
 
   .page-main__offers  {
     margin-bottom: 82px;
+  }
+
+  .page-main__map {
+    min-height: 400px;
+    background-image: url("../img/map-pin.png"), url("../img/map-desktop.jpg");
+    background-position: 79% 52%, 50% 0;
+    background-size: 113px 106px, 1545px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/map-pin-2x.png"), url("../img/map-desktop-2x.jpg");
+    }
+  }
+
+  .page-main__location__wrapper {
+    position: relative;
+  }
+
+  .page-main__partners {
+    position: absolute;
+    background-color: white;
   }
 }

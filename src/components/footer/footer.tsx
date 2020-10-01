@@ -5,9 +5,21 @@ const Footer = () => {
     <section className="footer">
       <h2 className="footer__title">Cat Energy</h2>
       <ul className="footer__social-list social-list">
-        <li className="social-list_item"><a href="" className="social-list__link"><span className="visually-hidden">Мы в VK</span></a></li>
-        <li className="social-list_item"><a href="" className="social-list__link"><span className="visually-hidden">Мы в Instargamm</span></a></li>
-        <li className="social-list_item"><a href="" className="social-list__link"><span className="visually-hidden">Мы в Facebook</span></a></li>
+        <li className="social-list_item">
+          <a href="" className="social-list__link"><span className="visually-hidden">Мы в VK</span>
+          <svg width="22" height="12">
+            <use xlinkHref="#sprite-vk"></use>
+          </svg>
+          </a>
+        </li>
+        <li className="social-list_item">
+          <a href="" className="social-list__link"><span className="visually-hidden">Мы в Instargamm</span>
+          </a>
+        </li>
+        <li className="social-list_item">
+          <a href="" className="social-list__link"><span className="visually-hidden">Мы в Facebook</span>
+          </a>
+        </li>
       </ul>
       <p className="footer__copyright">
         <span className="footer__copyright-title">Html Academy</span>
