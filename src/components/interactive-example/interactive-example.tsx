@@ -75,24 +75,24 @@ export default class InteractiveExapmle extends React.Component<{}, State> {
           ></div>
         </div>
         <div className="interactive-exaple__bottom-wrapper">
-          <span className="interactive-exaple__desc"
+          <button type="button" className="interactive-exaple__desc"
             onClick={this.beforeClickHandler}
           >
             Было
-          </span>
+          </button>
           <p className="interactive-example__scale"
             onClick={this.scaleClickHandler}
           >
-            <span className="interactive-exaple__pin"
+            <button className="interactive-exaple__pin"
               style={stylePin}
               onMouseDown={this.pinClickHandler}
-            ></span>
+            ><span className="visually-hidden">Ползунок</span></button>
           </p>
-          <span className="interactive-exaple__desc"
+          <button type="button" className="interactive-exaple__desc"
             onClick={this.afterClickHandler}
           >
             Стало
-          </span>
+          </button>
         </div>
       </section>
     );
