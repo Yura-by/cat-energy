@@ -1,0 +1,24 @@
+.page-catalog__top-wrapper {
+  border-top: 1px solid #e6e6e6;
+}
+
+.page-catalog__title {
+  @include resetH;
+  font-size: 36px;
+  line-height: 60px;
+  text-transform: none;
+  font-weight: normal;
+  width: 87.5%;
+  margin: 0 auto;
+  padding-top: 44px;
+  padding-bottom: 23px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-catalog__title {
+    font-size: 60px;
+    line-height: 60px;
+    width: 92%;
+    border: none;
+  }
+}

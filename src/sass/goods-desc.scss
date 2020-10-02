@@ -1,0 +1,66 @@
+.goods-desc {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: normal;
+  text-transform: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.goods-desc__cell {
+  font: inherit;
+}
+
+.goods-desc__row {
+  display: flex;
+  flex-direction: column;
+}
+
+.goods-desc__data {
+  text-align: right;
+}
+
+.goods-desc__button {
+  @include resetButton;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #ffffff;
+  background-color: #68b738;
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 8px;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: #81bd5d;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .goods-desc {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .goods-desc__cell {
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .goods-desc__data {
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .goods-desc thead,
+  .goods-desc tbody {
+    width: 50%;
+  }
+
+}
