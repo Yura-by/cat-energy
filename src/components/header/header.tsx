@@ -20,13 +20,13 @@ const Header: React.FunctionComponent<Props> = (props: Props) => {
       <div className="page-header__wrapper">
 
         <div className="page-header__inner-wrapper">
-          <a href="" className="page-header__logo">
+          <Link to={linkHrefs[0]} className="page-header__logo">
             <picture>
               <source media="(min-width: 1300px)" srcSet="img/logo-desktop.svg" />
               <source media="(min-width: 768px)" srcSet="img/logo-tablet.svg" />
               <img src="img/logo-mobile.svg" width="191" height="38" alt="Барбершоп «Бородинский»" />
             </picture>
-          </a>
+          </Link>
 
           <button className={`page-header__button ${buttonMenuClassHidden}`} type="button"
             onClick={onMenuButtonClick}

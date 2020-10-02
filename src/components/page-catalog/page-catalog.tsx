@@ -16,7 +16,16 @@ const PageCatalog = () => {
              return (
               <li className="goods__item" key={it.id}>
                 <h4 className="goods__title">Cat Energy {it.title}</h4>
-                <img src={it.image} alt={it.title}className="goods__image"/>
+
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcSet={`${it.image.webpDesktop} 1x, ${it.image.webp2xDesktop} 2x`} />
+                  <source type="image/webp" srcSet={`${it.image.webpMobile} 1x, ${it.image.webp2xMobile} 2x`} />
+                  <source media="(min-width: 768px)" srcSet={`${it.image.jpgDesktop} 1x, ${it.image.jpg2xDesktop} 2x`} />
+                  <img className="goods__image" src={it.image.jpgMobile} srcSet={it.image.jpg2xMobile} alt={it.title}
+                    sizes="(min-width: 768px) 195px : 140px"
+                  />
+                </picture>
+
                 <table className="goods__table goods-desc">
                   <thead>
                     <tr className="goods-desc__row">

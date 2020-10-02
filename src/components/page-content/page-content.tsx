@@ -13,7 +13,7 @@ enum Menu {
   PROGRAM = `Подбор программы`,
 }
 
-enum AppRoute {
+export enum AppRoute {
   MAIN = `/`,
   CATALOG = `/catalog`,
   PROGRAM = `/search-program`
