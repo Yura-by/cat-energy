@@ -9,8 +9,8 @@ const MainOffers = [
       jpg2xMobile: `img/catalog-1-mobile-2x.jpg`,
       webpDesktop: `img/catalog-1-desktop.webp`,
       webp2xDesktop: `img/catalog-1-desktop-2x.webp`,
-      jpgDesktop: `img/catalog-1-desktop.jpg`,
-      jpg2xDesktop: `img/catalog-1-desktop-2x.jpg`
+      jpgDesktop: `img/catalog-1-desktop.png`,
+      jpg2xDesktop: `img/catalog-1-desktop-2x.png`
     },
     data: {
       volume: `500 г`,
@@ -28,8 +28,8 @@ const MainOffers = [
       jpg2xMobile: `img/catalog-2-mobile-2x.jpg`,
       webpDesktop: `img/catalog-2-desktop.webp`,
       webp2xDesktop: `img/catalog-2-desktop-2x.webp`,
-      jpgDesktop: `img/catalog-2-desktop.jpg`,
-      jpg2xDesktop: `img/catalog-2-desktop-2x.jpg`
+      jpgDesktop: `img/catalog-2-desktop.png`,
+      jpg2xDesktop: `img/catalog-2-desktop-2x.png`
     },
     data: {
       volume: `1000 г`,
@@ -47,8 +47,8 @@ const MainOffers = [
       jpg2xMobile: `img/catalog-3-mobile-2x.jpg`,
       webpDesktop: `img/catalog-3-desktop.webp`,
       webp2xDesktop: `img/catalog-3-desktop-2x.webp`,
-      jpgDesktop: `img/catalog-3-desktop.jpg`,
-      jpg2xDesktop: `img/catalog-3-desktop-2x.jpg`
+      jpgDesktop: `img/catalog-3-desktop.png`,
+      jpg2xDesktop: `img/catalog-3-desktop-2x.png`
     },
     data: {
       volume: `500 г`,
@@ -66,8 +66,8 @@ const MainOffers = [
       jpg2xMobile: `img/catalog-4-mobile-2x.jpg`,
       webpDesktop: `img/catalog-4-desktop.webp`,
       webp2xDesktop: `img/catalog-4-desktop-2x.webp`,
-      jpgDesktop: `img/catalog-4-desktop.jpg`,
-      jpg2xDesktop: `img/catalog-4-desktop-2x.jpg`
+      jpgDesktop: `img/catalog-4-desktop.png`,
+      jpg2xDesktop: `img/catalog-4-desktop-2x.png`
     },
     data: {
       volume: `500 г`,
@@ -85,8 +85,8 @@ const MainOffers = [
       jpg2xMobile: `img/catalog-5-mobile-2x.jpg`,
       webpDesktop: `img/catalog-5-desktop.webp`,
       webp2xDesktop: `img/catalog-5-desktop-2x.webp`,
-      jpgDesktop: `img/catalog-5-desktop.jpg`,
-      jpg2xDesktop: `img/catalog-5-desktop-2x.jpg`
+      jpgDesktop: `img/catalog-5-desktop.png`,
+      jpg2xDesktop: `img/catalog-5-desktop-2x.png`
     },
     data: {
       volume: `500 г`,
@@ -104,8 +104,8 @@ const MainOffers = [
       jpg2xMobile: `img/catalog-6-mobile-2x.jpg`,
       webpDesktop: `img/catalog-6-desktop.webp`,
       webp2xDesktop: `img/catalog-6-desktop-2x.webp`,
-      jpgDesktop: `img/catalog-6-desktop.jpg`,
-      jpg2xDesktop: `img/catalog-6-desktop-2x.jpg`
+      jpgDesktop: `img/catalog-6-desktop.png`,
+      jpg2xDesktop: `img/catalog-6-desktop-2x.png`
     },
     data: {
       volume: `1000 г`,
@@ -123,8 +123,8 @@ const MainOffers = [
       jpg2xMobile: `img/catalog-7-mobile-2x.jpg`,
       webpDesktop: `img/catalog-7-desktop.webp`,
       webp2xDesktop: `img/catalog-7-desktop-2x.webp`,
-      jpgDesktop: `img/catalog-7-desktop.jpg`,
-      jpg2xDesktop: `img/catalog-7-desktop-2x.jpg`
+      jpgDesktop: `img/catalog-7-desktop.png`,
+      jpg2xDesktop: `img/catalog-7-desktop-2x.png`
     },
     data: {
       volume: `500 г`,

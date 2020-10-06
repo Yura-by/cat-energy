@@ -52,22 +52,28 @@ export default class PageContent extends React.PureComponent<{}, State> {
   }
 
   render() {
+    const classNamePageTopWrapper = this.state.activeMenu === Menu.MAIN ? `page-top-wrapper--main` : ``;
     return (
       <React.Fragment>
-        <Header
-          menuItems={Object.values(Menu)}
-          linkHrefs={Object.values(AppRoute)}
-          activeItem={this.state.activeMenu}
-          onMenuItemChange={this._menuChangeHandler}
-          isMenuOpen={this.state.isMenuOpen}
-          onMenuButtonClick={this._menuButtonChangeHandler}
-        />
+        <div className={`page-top-wrapper ${classNamePageTopWrapper}`}>
 
-        <Switch>
-          <Route path={AppRoute.MAIN} component={PageMain} exact />
-          <Route path={AppRoute.CATALOG} component={PageCatalog} exact />
-          <Route path={AppRoute.PROGRAM} component={PageForm} exact />
-        </Switch>
+          <Header
+            menuItems={Object.values(Menu)}
+            linkHrefs={Object.values(AppRoute)}
+            activeItem={this.state.activeMenu}
+            onMenuItemChange={this._menuChangeHandler}
+            isMenuOpen={this.state.isMenuOpen}
+            onMenuButtonClick={this._menuButtonChangeHandler}
+            isInMainPage={this.state.activeMenu === Menu.MAIN}
+          />
+
+          <Switch>
+            <Route path={AppRoute.MAIN} component={PageMain} exact />
+            <Route path={AppRoute.CATALOG} component={PageCatalog} exact />
+            <Route path={AppRoute.PROGRAM} component={PageForm} exact />
+          </Switch>
+
+        </div>
 
         <Footer />
       </React.Fragment>

@@ -74,10 +74,13 @@
 @media(min-width: $desktop-width) {
   .site-list {
     font-size: 20px;
-    color: white;
   }
 
-  .site-list__item--active .site-list_link {
-    border-bottom: 2px solid white;
+  .site-list--dark-background {
+    color: white;
+
+    & .site-list__item--active .site-list_link {
+      border-bottom: 2px solid white;
+    }
   }
 }

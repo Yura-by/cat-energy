@@ -39,6 +39,11 @@
     border: none;
     display: flex;
     align-items: flex-end;
+    padding-bottom: 40px;
+    margin-bottom: 58px;
+    background-image: linear-gradient(to bottom, transparent 16%, #f2f2f2 16%);
+    min-height: 513px;
+    box-sizing: border-box;
   }
 
   .goods__list {
@@ -53,6 +58,7 @@
     width: 130px;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 23px;
   }
 
   .goods__title br {
@@ -75,5 +81,27 @@
 
   .goods__image {
     margin-top: auto;
+    margin-bottom: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goods__list {
+    margin-left: -80px;
+  }
+
+  .goods__item {
+    width: 245px;
+    margin-bottom: 62px;
+    margin-left: 80px;
+  }
+
+  .goods__container {
+    width: 90%;
+  }
+
+  .goods__top-container {
+    width: 94%;
+    margin: 0 auto;
   }
 }

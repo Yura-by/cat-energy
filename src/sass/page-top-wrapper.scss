@@ -1,12 +1,12 @@
 @media (min-width: $desktop-width) {
-  body {
+  .page-top-wrapper--main {
     background-image: url("../img/index-background-desktop.png");
     background-repeat: no-repeat;
     background-position: top 0 right -69px;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    body {
+    .page-top-wrapper--main {
       background-image: url("../img/index-background-desktop-2x.png");
       background-size: 720px auto;
     }

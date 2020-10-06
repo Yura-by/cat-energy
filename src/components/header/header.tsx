@@ -8,12 +8,14 @@ interface Props {
   onMenuItemChange: (menu: string) => void;
   isMenuOpen: boolean;
   onMenuButtonClick: () => void;
+  isInMainPage: boolean;
 }
 
 const Header: React.FunctionComponent<Props> = (props: Props) => {
-  const {menuItems, linkHrefs, activeItem, onMenuItemChange, isMenuOpen, onMenuButtonClick} = props;
+  const {menuItems, linkHrefs, activeItem, onMenuItemChange, isMenuOpen, onMenuButtonClick, isInMainPage} = props;
   const buttonMenuClassHidden = isMenuOpen ? `` : `page-header__botton--close`;
   const navClassHidden = isMenuOpen ? `page-header__nav--close` : ``;
+  const colorFontClassName = isInMainPage ? `site-list--dark-background` : ``;
   return (
     <header className="page-header">
 
@@ -39,7 +41,7 @@ const Header: React.FunctionComponent<Props> = (props: Props) => {
 
 
         <nav className={`page-header__nav ${navClassHidden} main-nav`}>
-          <ul className="main-nav__list site-list">
+          <ul className={`main-nav__list site-list ${colorFontClassName}`}>
             {menuItems.map((menuItem, index) => {
               const activeClass = menuItem === activeItem ? `site-list__item--active` : ``;
               return (

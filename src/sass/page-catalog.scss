@@ -10,8 +10,10 @@
   font-weight: normal;
   width: 87.5%;
   margin: 0 auto;
-  padding-top: 44px;
+  padding-top: 18px;
   padding-bottom: 23px;
+  text-align: center;
+  padding-right: 21px;
 }
 
 @media (min-width: $tablet-width) {
@@ -20,5 +22,20 @@
     line-height: 60px;
     width: 92%;
     border: none;
+    padding-top: 43px;
+    text-align: left;
+    padding-right: 0;
+    margin-bottom: 50px;
+  }
+
+  .page-catalog__top-wrapper {
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-catalog__title {
+    width: 94%;
+    padding-top: 69px;
   }
 }

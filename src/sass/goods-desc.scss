@@ -48,19 +48,24 @@
   .goods-desc {
     font-size: 16px;
     line-height: 16px;
+    margin-bottom: 26px;
   }
 
-  .goods-desc__cell {
-    border-bottom: 1px solid #cdcdcd;
-  }
-
+  .goods-desc__cell,
   .goods-desc__data {
     border-bottom: 1px solid #cdcdcd;
+    padding-bottom: 7px;
+    margin-bottom: 7px;
   }
 
   .goods-desc thead,
   .goods-desc tbody {
     width: 50%;
   }
+}
 
+@media (min-width: $desktop-width) {
+  .goods-desc__button {
+    width: 90%;
+  }
 }
