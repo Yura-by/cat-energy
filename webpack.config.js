@@ -13,7 +13,10 @@ module.exports = {
         },
       }, {
         test: /\.(tsx|ts)?$/,
-        loader: `ts-loader`
+        use: [
+          {loader: `babel-loader`},
+          {loader: `ts-loader`}
+        ]
       }
     ],
   },
